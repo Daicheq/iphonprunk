@@ -28,6 +28,3 @@ linkElement.addEventListener('click', event => {
 	event.preventDefault();
 	showInfoWithAnimation();
 });
-
-// Wywołanie po 2 sekundach
-setTimeout(showInfoWithAnimation, 3000);
