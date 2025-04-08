@@ -28,3 +28,11 @@ linkElement.addEventListener('click', event => {
 	event.preventDefault();
 	showInfoWithAnimation();
 });
+
+document.body.addEventListener(
+	'click',
+	() => {
+		document.getElementById('siren').play();
+	},
+	{ once: true }
+);
