@@ -1,0 +1,91 @@
+* {
+	padding: 0;
+	margin: 0;
+	color: white;
+	text-shadow: 0 0 5px black;
+	font-family: 'Courier New', Courier, monospace;
+}
+body {
+	background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmo0d21ibXVhazQzZTJrNmtkZzMyNW4wdGk4cDhwOXFsd2M4N2E4dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l378wcSfS7eXWQgla/giphy.gif')
+		no-repeat center center fixed;
+	background-size: cover;
+	max-height: 100vh;
+}
+
+header {
+	height: 20vh;
+	width: 100vw;
+	text-align: center;
+	align-content: center;
+	font-size: 1.5em;
+}
+main {
+	height: 60vh;
+	width: 100vw;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main img {
+	max-height: 70%;
+	position: absolute;
+}
+@keyframes scale {
+	0% {
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		transform: scale(0.8);
+	}
+}
+img#japko {
+	z-index: -1;
+}
+img#wybuch {
+	z-index: -2;
+	animation: scale 2s infinite;
+}
+footer {
+	height: 20vh;
+	width: 100vw;
+	text-align: center;
+	align-content: center;
+}
+
+/*  */
+#infomacja {
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	align-content: center;
+}
+
+.Info {
+	display: none;
+	width: 80vw;
+	height: 80vh;
+	top: 10vh;
+	bottom: 10vh;
+	left: 10vw;
+	right: 10vw;
+	position: fixed;
+	background-color: rgb(52, 111, 238);
+	text-align: center;
+	align-content: center;
+	font-size: 3vh;
+	border-radius: 100px;
+	box-shadow: 0px 0px 10vh rgb(8, 8, 8);
+}
+
+.Info.show {
+	display: block;
+}
+
+.info-text {
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 1.4em;
+}
